@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="40dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="25dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_twitter"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:contentDescription="@string/cd_twitter_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="35sp"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/kaushan_script_regular"
+                        android:text="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="12dp"
+                        android:paddingStart="12dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/signika_regular"
+                        android:textSize="18sp"
+                        android:text="@string/app_desc" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="100sp"
+                android:paddingStart="30sp"
+                android:paddingBottom="70dp"
+                android:paddingEnd="30sp">
+
+                <TextView
+                    android:id="@+id/tv_entry_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="32sp"
+                    android:fontFamily="@font/patrickhand_regular"
+                    android:textColor="@color/blue_accent_2" />
+
+                <TextView
+                    android:id="@+id/tv_entry_tweet_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/patrickhand_regular"
+                    android:textColor="@color/blue_accent_2" />
+
+                <TextView
+                    android:id="@+id/tv_entry_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="35sp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/signika_light"
+                    android:textColor="@color/whitesmoke" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/whitesmoke"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/et_search_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.90"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:drawableTint="@color/colorAccent"
+            android:fontFamily="@font/signika_bold"
+            android:hint="@string/search_hint"
+            android:textColor="@color/orange_yellow"
+            android:textColorHint="@color/grey1"
+            android:maxLines="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:text="@string/search"
+            android:onClick="search"
+            android:textSize="15sp"
+            android:textColor="@color/blue_accent"
+            android:background="@color/blue_accent_2" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

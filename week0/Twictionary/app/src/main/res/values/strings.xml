@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Twictionary</string>
+    <string name="app_desc">The twitter dictionary</string>
+    <string name="cd_twitter_icon">Twitter Icon</string>
+    <string name="search">search</string>
+    <string name="search_hint">Enter search text here</string>
+    <string name="no_search_text">There is no search text!</string>
+    <string name="no_entry_found">Could not find a match : (</string>
+</resources>
