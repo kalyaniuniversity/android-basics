@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/string"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Reverse"
+        android:layout_width="260sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="@color/colorLine"
+        android:ems="10"
+        android:hint="@string/user_input"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="332dp"
+        android:background="@drawable/reset"
+        android:onClick="reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Reverse" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/length"
+        android:onClick="getLength"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Reverse" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/capital"
+        android:onClick="getCapitalize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Reverse" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/reverse"
+        android:onClick="reverseWord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Reverse" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/lower"
+        android:onClick="getLower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Reverse" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="294dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="68dp"
+        android:text="Welcome to the "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fun of Strings"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
