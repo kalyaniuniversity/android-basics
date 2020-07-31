@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CPS_Student Diary</string>
+    <string name="login">Welcome Back...Enter your details</string>
+    <string name="std_name">Prabhakar Kumar</string>
+    <string name="blank"></string>
+    <string name="welcome_message">Hello, %1$s , Welcome to the family of Brahaman Samaj</string>
+    <string name="btn_register">New Here ? Register Here</string>
+    <string name="register_wlcm">Welcome  </string>
+    <string name="success_msg">Done \n %1$s your profile has been created</string>
+</resources>
