@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="266dp"
+        android:layout_height="266dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:src="@drawable/listner"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#001f24"
+        />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/playbutton"
+
+        />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/stopbutton"
+        android:layout_alignBottom="@+id/btn_play"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/btn_play"
+        />
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/pausebutton"
+        android:layout_alignBottom="@+id/btn_play"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/btn_play"
+        
+        />
+
+
+
+</RelativeLayout>

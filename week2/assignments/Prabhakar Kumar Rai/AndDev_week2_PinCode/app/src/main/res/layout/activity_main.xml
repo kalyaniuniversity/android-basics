@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="3"
+        android:textSize="40dp"
+        android:text="\n\n One stop for desired PinCode"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/get"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="Get PinCode"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:onClick="Display_Listview"
+        android:layout_marginBottom="120dp"
+        />
+
+
+</LinearLayout>
